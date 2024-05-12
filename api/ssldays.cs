@@ -55,7 +55,7 @@ namespace DoingAzure.SslDays
             return new OkObjectResult(jsonResponse);
         }
 
-        DateTime GetSslCertificateExpiration(string url, int port = 443)
+        static DateTime GetSslCertificateExpiration(string url, int port = 443)
         {
             using (TcpClient client = new TcpClient(url, port))
             {
