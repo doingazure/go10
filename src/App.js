@@ -1,32 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [domain, setDomain] = useState('');
+  const [ssldays, setSsldays] = useState('');
+
+  const handleButtonClick = () => {
+    const url = `/api/ssldays?name=${encodeURIComponent(domain)}`;
+    alert(`ssldays API: ${url}`);
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+      setSsldays(data.ssldays);
+      console.log(`ssldays API results: ${data.ssldays} days remain on SSL certificate for ${domain}`);
+      })
+      .catch(error => console.error(error));
+
+      console.log(`ssldays API results: --- ${ssldays} days remain on SSL certificate for ${domain}`);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>go10</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learnzx Reactz
-        </a>
+      <header className="App-header" style={{ height: '11px' }}>
+        <img src={logo} className="App-logo" alt="logo" />      
       </header>
       <main>
-        <h1>Content</h1>
+        <input type="text" placeholder="Enter domain name" value={domain} onChange={e => setDomain(e.target.value)} />
+        <button onClick={handleButtonClick}>Get SSL Days</button>
+        <p>{ssldays} (full) days remain on SSL certificate for {domain}</p>
       </main>
       <footer>
-        <h1>Copyright (c) 2024, Doing Azure, TBD licensed under CC</h1>
+        <small>Copyright (c) 2024, Doing Azure, TBD licensed under CC</small>
       </footer>
     </div>
   );
 }
+
 
 export default App;
