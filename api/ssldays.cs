@@ -10,6 +10,13 @@ using Newtonsoft.Json;
 
 namespace DoingAzure.SslDays
 {
+    record SslDays(int sslDays)
+    {
+        public SslDays() : this(42)
+        {
+        }
+    }
+
     public static class ssldays
     {
         [FunctionName("ssldays")]
@@ -32,7 +39,8 @@ namespace DoingAzure.SslDays
                 // : $"Hello, {name}. This HTTP triggered function executed successfully.";
                 : $"{ssldays}";
 
-            return new OkObjectResult(responseMessage);
+            var jsonResponse = new SslDays(ssldays);
+            return new OkObjectResult(jsonResponse);
         }
     }
 }
