@@ -12,12 +12,13 @@ function App() {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-      setSsldays(data.sslDays);
-      console.log(`ssldays API results: ${data.sslDays} days remain on SSL certificate for ${domain}`);
+        ssldays = data.sslDays;
+        setSsldays(data.sslDays);
+        console.log(`ssldays API results: ${data.sslDays} days remain on SSL certificate for ${domain}`);
       })
       .catch(error => console.error(error));
 
-      console.log(`ssldays API results: --- ${sslDays} days remain on SSL certificate for ${domain}`);
+      console.log(`ssldays API results: --- ${ssldays} remain on SSL certificate for ${domain}`);
   };
 
   return (
