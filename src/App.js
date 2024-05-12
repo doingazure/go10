@@ -16,9 +16,15 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learnzx React
+          Learnzx Reactz
         </a>
       </header>
+      <main>
+        <h1>Content</h1>
+      </main>
+      <footer>
+        <h1>Copyright (c) 2024, Doing Azure, TBD licensed under CC</h1>
+      </footer>
     </div>
   );
 }
