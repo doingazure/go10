@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header" style={{ height: '11px' }}>
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />      
       </header>
       <main>
@@ -31,7 +31,7 @@ function App() {
         <p>{ssldays} (full) days remain on SSL certificate for {domain}</p>
       </main>
       <footer>
-        <small>Copyright (c) 2024, Doing Azure, TBD licensed under CC</small>
+        <small>Copyright (c) 2024, Doing Azure, TBD but prob will be licensed under CC</small>
       </footer>
     </div>
   );
