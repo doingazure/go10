@@ -5,6 +5,12 @@
 .App-logo {
   height: 10vmin;
   pointer-events: none;
+  /* a little whitespace */
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  /* otherwise, horizontal alignment is to LEFT (instead of center) */
+  align-items: left;  
 }
 
 @media (prefers-reduced-motion: no-preference) {
