@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
-   <text x="50" y="50" font-family="Segoe UI Bold" font-size="48" fill="#007FFF">
-     Doing Azure
-   </text>
- </svg>
+   <text x="50" y="50" font-family="Segoe UI" font-size="48" fill="#007FFF">
+      Doing
+    </text>
+    <text x="50" y="50" font-family="Segoe UI Bold" font-size="48" fill="#007FFF">
+      Azure
+    </text>
+   </svg>
  
