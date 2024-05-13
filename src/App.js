@@ -10,7 +10,7 @@ function App() {
 
   const handleButtonClick = () => {
     const url = `/api/ssldays?name=${encodeURIComponent(domain)}`;
-    alert(`ssldays API: ${url}`);
+    // alert(`ssldays API: ${url}`);
     fetch(url)
       .then(response => response.json())
       .then(data => {
