@@ -5,11 +5,9 @@
 .App-logo {
   height: 10vmin;
   pointer-events: none;
-  /* a little whitespace */
   margin-top: 10px;
   margin-left: 10px;
   margin-right: auto;
-  /* otherwise, horizontal alignment is to LEFT (instead of center) */
   align-items: left;  
 }
 
@@ -27,13 +25,13 @@
 
 @keyframes App-logo-rock {
   0% {
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(12deg);
   }
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
   }
 }
 
