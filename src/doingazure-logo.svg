@@ -1,9 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
-   <text x="50" y="50" font-family="Segoe UI" font-size="48" fill="#007FFF">
-      Doing
-    </text>
-    <text x="50" y="50" font-family="Segoe UI Bold" font-size="48" fill="#007FFF">
-      Azure
-    </text>
-   </svg>
- 
+   <text x="50" y="35" font-family="Segoe UI" font-size="36" fill="#007FFF">
+       Doing
+   </text>
+   <text x="50" y="75" font-family="Segoe UI Bold" font-size="48" fill="#007FFF">
+       Azure
+   </text>
+</svg>
+  
+<!-- from Gemini on 12-May-2024
+Create an SVG file with text "Doing Azure" where "Doing" is above "Azure". 
+Make the text color the same as the blue/azure color from the Microsoft Azure logo.
+Make the font for "Azure" bold and as similar to the "A" in the Microsoft Azure logo as you can. Make the fond for "Doing" the same, except not bold.
+-->
