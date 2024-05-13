@@ -6,13 +6,15 @@ function App() {
   const [domain, setDomain] = useState('');
   const [ssldays, setSsldays] = useState('');
 
+  var computedSsldays = 42;
+
   const handleButtonClick = () => {
     const url = `/api/ssldays?name=${encodeURIComponent(domain)}`;
     alert(`ssldays API: ${url}`);
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        var computedSsldays = data.sslDays;
+        computedSsldays = data.sslDays;
         setSsldays(data.sslDays);
         console.log(`ssldays API results: ${data.sslDays} days remain on SSL certificate for ${domain}`);
       })
