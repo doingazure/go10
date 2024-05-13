@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
-   <text x="45%" y="35" font-family="Segoe UI" font-size="36" fill="#007FFF" text-anchor="middle">
+   <text x="50%" y="35" font-family="Segoe UI" font-size="36" fill="#007FFF" text-anchor="middle">
        doing
    </text>
-   <text x="55%" y="75" font-family="Segoe UI Bold" font-size="48" fill="#007FFF" text-anchor="middle">
+   <text x="50%" y="75" font-family="Segoe UI Bold" font-size="48" fill="#007FFF" text-anchor="middle">
        Azure
    </text>
 </svg>
