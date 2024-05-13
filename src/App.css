@@ -21,7 +21,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-rock 2s infinite linear;
+    animation: App-logo-rock 11s infinite linear;
   }
 }
 
